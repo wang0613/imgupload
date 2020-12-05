@@ -1,0 +1,18 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.1:3306/spring?serverTimezone=GMT&characterEncoding=UTF-8
+    username: root
+    password: root
+  mvc:
+    view:
+      prefix: /jsp/
+      suffix: .jsp
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.qhit.imgupload.pojo
